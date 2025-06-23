@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.logoHeader{
+    width: 130px;
+    height: auto;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    padding: 20px;
+}
+
+nav a{
+    font-family: "Anton SC", sans-serif;
+    font-size: 28px;
+    font-weight: 100;
+    margin: 0 20px;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: color .5s ease;
+}
+
+nav a:hover{
+    color: #E64946;
+}
+
+.cardSuperman{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.cardSuperman img {
+  width: 100%;
+  display: block;
+  transition: 0.4s ease;
+}
+
+.overlaySuperman {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px;
+  text-align: left;
+  transition: all 0.4s ease;
+}
+
+.overlaySuperman h4{
+    font-family: "Anton SC", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 100;
+    margin: 0;
+    transition: all 0.4s ease;
+    transform: translateY(50%);
+}
+
+.overlaySuperman p {
+    font-family: "Jost", sans-serif;
+    font-size: 1rem;
+    margin-top: 10px;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+.cardSuperman:hover .overlaySuperman {
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+}
+
+.cardSuperman:hover .overlaySuperman h4 {
+    transform: translateY(0);
+    font-size: 3.6rem;
+    opacity: 1;
+}
+
+.cardSuperman:hover .overlaySuperman p {
+    opacity: 1;
+    font-size: 1.3rem;
+    padding: 0 40px;
+}
+
+.noticiasContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 200px;
+    margin-top: 40px;
+}
+
+.noticiasTitle{
+    font-family: "Anton SC", sans-serif;
+    font-size: 48px;
+    font-weight: 100;
+    align-self: self-start;
+    padding: 30px 0;
+}
+
+.cardsContainer{
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    gap: 30px;
+}   
+
+.cardJurassic{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.cardJurassic img {
+  width: 100%;
+  display: block;
+  transition: 0.4s ease;
+}
+
+.overlayMini {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(0deg, rgba(0,0,0,0.9), rgba(0,0,0,0.1));
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px;
+  text-align: left;
+  transition: all 0.4s ease;
+}
+
+.overlayMini h5{
+    font-family: "Anton SC", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 100;
+    margin: 0;
+    transition: all 0.4s ease;
+    transform: translateY(50%);
+}
+
+.cardJurassic:hover .overlayMini {
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.cardJurassic:hover .overlayMini h5 {
+    transform: translateY(0);
+    font-size: 1.4rem;
+    opacity: 1;
+}
