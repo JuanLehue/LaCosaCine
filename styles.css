@@ -6,9 +6,10 @@
 
 header{
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    margin: 20px;
+    margin: 0;
+    padding: 20px;
 }
 
 .logoHeader{
@@ -16,16 +17,54 @@ header{
     height: auto;
 }
 
+header a{
+    font-family: "Jost", sans-serif;
+    font-size: 15px;
+    font-weight: 10px;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+    border-style: solid;
+    border-width: 2px;
+    padding: 5px;
+    border-color: black;
+    margin: 0 20px;
+    color: black;
+    text-decoration: none;
+    transition: color .5s ease;
+}
+
+header a:hover{
+    background-color: black;
+    color: #FFFFFF;
+   transition: color .5s ease;
+
+}
+
+.fecha{
+    font-family: "Anton SC", sans-serif;
+    font-size: 15px;
+    font-weight: 10px;
+    color: #FFFFFF;
+    background-color: #E64946;
+    padding: 5px;
+    margin: 0;
+    display: inline-block;
+    align-self: flex-start;
+
+} 
+
 nav{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
     background-color: black;
-    padding: 20px;
+
+    padding: 5px 0;
 }
 
 nav a{
     font-family: "Anton SC", sans-serif;
+    padding: 10px 40px;
     font-size: 28px;
     font-weight: 100;
     margin: 0 20px;
@@ -38,6 +77,143 @@ nav a:hover{
     color: #E64946;
 }
 
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.button {
+  background-color: transparent;
+  color: white;
+  font-family: "Anton SC", sans-serif;
+  font-size: 28px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 10px 40px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 200px;
+  background-color: black;
+  z-index: 999;
+}
+
+.dropdown-content a {
+  display: block;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  font-family: "Anton SC", sans-serif;
+  font-size: 20px;
+}
+
+.dropdown-content a:hover {
+  background-color: black;
+}
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+.dropdown:hover .button {
+  color: #E64946;}
+
+.barrabusqueda {
+  position: relative;
+  box-sizing: border-box;
+  width: fit-content;
+}
+
+.mainbox {
+  box-sizing: border-box;
+  position: relative;
+  width: 230px;
+  height: 50px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  border-radius: 160px;
+  background-color: #E64946;
+  transition: all 0.3s ease;
+}
+
+.checkbox:focus {
+  border: none;
+  outline: none;
+}
+
+.checkbox:checked {
+  right: 10px;
+}
+
+.checkbox:checked ~ .mainbox {
+  width: 50px;
+}
+
+.checkbox:checked ~ .mainbox .search_input {
+  width: 0;
+  height: 0px;
+}
+
+.checkbox:checked ~ .mainbox .iconContainer {
+  padding-right: 8px;
+}
+
+.checkbox {
+  box-sizing: border-box;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 17px;
+  top: 10px;
+  z-index: 9;
+  cursor: pointer;
+  appearance: none;
+}
+
+.search_input {
+  box-sizing: border-box;
+  height: 100%;
+  width: 170px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding-bottom: 4px;
+  /*padding-left: 10px;*/
+  font-size: 1em;
+  color: white;
+  transition: all 0.3s ease;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.search_input::placeholder {
+  color: rgba(255, 255, 255, 0.776);
+}
+
+.iconobusqueda {
+  box-sizing: border-box;
+  padding-top: 5px;
+  width: fit-content;
+  transition: all 0.3s ease;
+}
+
+.search_icon {
+  box-sizing: border-box;
+  fill: white;
+  font-size: 1.3em;
+}
+
+
+
+/*ULTIMAS NOTICIAS*/
 .cardSuperman{
     position: relative;
     width: 100%;
@@ -77,6 +253,7 @@ nav a:hover{
 }
 
 .overlaySuperman p {
+    
     font-family: "Jost", sans-serif;
     font-size: 1rem;
     margin-top: 10px;
@@ -87,20 +264,25 @@ nav a:hover{
 .cardSuperman:hover .overlaySuperman {
   background-color: rgba(0, 0, 0, 0.7);
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .cardSuperman:hover .overlaySuperman h4 {
     transform: translateY(0);
     font-size: 3.6rem;
     opacity: 1;
+    padding: 0 20px;
+
 }
 
 .cardSuperman:hover .overlaySuperman p {
     opacity: 1;
     font-size: 1.3rem;
-    padding: 0 40px;
+    padding: 0 20px;
 }
+
+
+
 
 .noticiasContainer{
     display: flex;
@@ -108,6 +290,7 @@ nav a:hover{
     align-items: center;
     margin: 0 200px;
     margin-top: 40px;
+    margin-bottom: 60px;
 }
 
 .noticiasTitle{
@@ -160,7 +343,7 @@ nav a:hover{
     font-weight: 100;
     margin: 0;
     transition: all 0.4s ease;
-    transform: translateY(50%);
+    transform: translateY(20%);
 }
 
 .cardJurassic:hover .overlayMini {
@@ -173,4 +356,321 @@ nav a:hover{
     transform: translateY(0);
     font-size: 1.4rem;
     opacity: 1;
+}
+
+hr{
+    border: none;
+    border-top: 1.7px solid #000000;
+    margin: 20px 0;
+    width: 1025px;
+    justify-self: center;    
+}
+
+/*SECCION CARRUSEL*/
+.sectionCarrusel{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+/*CARRUSEL*/
+.carruselContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 200px;
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+
+.carruselTitle{
+    font-family: "Anton SC", sans-serif;
+    font-size: 48px;
+    font-weight: 100;
+    align-self: self-start;
+    padding: 10px 0;
+}
+
+.carruselItem{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.carruselItem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.4s ease;
+}
+
+
+
+
+.overlayCarrusel{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(0deg, rgba(0,0,0,0.9), rgba(0,0,0,0.1));
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.overlayCarrusel h4{
+    font-family: "Anton SC", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 100;
+    margin: 0;
+    align-self: flex-start;
+    transition: all 0.4s ease;
+    transform: translateY(160%);
+    padding: 10px 20px;
+}
+
+
+.carruselItemContainer{
+    width: 300%;
+    height: 100%;
+    display: flex;
+}
+
+.carrusel{
+    position: relative;
+    width: 650px;
+    height: 350px;
+    overflow: hidden;
+}
+
+.btn-left, .btn-right {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    user-select: none;
+}
+
+.btn-right{
+    right: 0px;
+}
+
+.btn-left{
+    left: 0px;
+}
+
+
+
+.videos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+}
+
+.videos hr{
+    width: 100%;
+    margin: 0;
+}
+
+.videos h4{
+    font-family: "Jost", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    margin: 10px 0;
+    align-self: flex-start;
+}
+
+.reproductor{
+    width: 100%;
+    height: 250px;
+    border: none;
+}
+
+.redes{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 10px;
+    background-color: #000000;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    padding: 10px 0;
+}
+
+.redes img{
+    cursor: pointer;
+    width: 30px;
+    height: auto;
+}
+
+
+/*FOOTER*/
+.footerContainer{    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 300px;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.redesFooter{
+    display: flex;
+    width: auto;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.redesFooter h4{
+    font-family: "Jost", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    align-self: flex-start;
+}
+.redesFooterIcons{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.redesFooterIcons img{
+    cursor: pointer;
+    width: 40px;
+    height: auto;
+}
+
+footer hr{
+    width: 95%;
+    margin: 0;
+}
+
+.contactoFooter{
+    display: flex;
+    width: 320px;
+    background-color: #d9d9d9;
+    padding: 8px 20px;
+    border-radius: 25px;
+    margin-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contactoFooter p{
+    font-family: "Jost", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #000000;
+}
+
+.contactoFooter button{
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 5px 25px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-family: "Jost", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.logoFooter{
+    width: 200px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logoFooter img{
+    width: 100%;
+    height: auto;
+}
+
+.registroFooter{
+    display: flex;
+    width: auto;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.registroFooter h4{
+    font-family: "Jost", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    align-self: flex-start;
+    width: 360px;
+}
+
+.registroFooter form{
+    display: flex;
+    width: 100%;
+    background-color: #d9d9d9;
+    padding: 8px 20px;
+    border-radius: 25px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.registroFooter form input{
+    padding: 5px 0px;
+    border: none;
+    background-color: transparent;
+    font-family: "Jost", sans-serif;
+    font-size: 14px;
+    color: #00000050;
+    font-weight: 600;
+}
+
+.registroFooter form input:focus{
+    outline: none;
+    color: #000000;
+}
+
+
+.registroFooter form button{
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 5px 25px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-family: "Jost", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.registroFooter h5{
+    font-family: "Jost", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #000000;
+    padding-top: 30px;
+    align-self: flex-start;
+}
+
+.registroFooter h6{
+    font-family: "Jost", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #00000050;
+    align-self: flex-start;
 }

@@ -9,9 +9,48 @@
 </head>
 <body>
     <header>
+        <p class="fecha"> 23/05/2025</p>
         <img class="logoHeader" src="images/LogoLaCosaCine.png" alt="Logo de la Cosa Cine">
+        <a href=""> Iniciar sesion</a>
     </header>
     <nav>
+        <div>
+            <a href="">HOME</a>
+            <a href="">NOTICIAS</a>
+            <a href="">ENTREVISTAS</a>
+
+            <div class="dropdown">
+                <button class="button"> SERIES</button>
+                <div class="dropdown-content">
+                    <a href="#">COMICS</a>
+                    <a href="#">VIDEOJUEGOS</a>
+                    <a href="#">ACCIÓN</a>
+                    <a href="#">DRAMA</a>
+                    <a href="#">TERROR</a>
+                    <a href="#">ROMANCE</a>
+                    <a href="#">THRILLER</a>
+                    <a href="#">CIENCIA FICCIÓN</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <a href="#" class="button">PELICULAS</a>
+                <div class="dropdown-content">
+                    <a href="#">COMICS</a>
+                    <a href="#">VIDEOJUEGOS</a>
+                    <a href="#">ACCIÓN</a>
+                    <a href="#">DRAMA</a>
+                    <a href="#">TERROR</a>
+                    <a href="#">ROMANCE</a>
+                    <a href="#">THRILLER</a>
+                    <a href="#">CIENCIA FICCIÓN</a>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+   <!-- <nav>
         <div>  
             <a href="">NOTICIAS</a>
             <a href="">ENTREVISTAS</a>
@@ -20,6 +59,7 @@
         </div>
         <div></div>
     </nav>
+    !-->
     <div class="noticiasContainer">
         <h2 class="noticiasTitle">ÚLTIMAS NOTICIAS</h2>
         <div class="cardSuperman">
@@ -50,5 +90,79 @@
             </div>
         </div>
     </div> 
+    <hr>
+    <div class="carruselContainer">
+        <h2 class="carruselTitle">PRÓXIMOS ESTRENOS</h2>
+        <div class="sectionCarrusel">
+            <div class="carrusel">
+                <div class="carruselItemContainer">
+                    <div class="carruselItem">                 
+                        <img src="images/peacemaker.png" alt="">
+                        <div class="overlayCarrusel">
+                           <h4>PEACEMAKER - TEMPORADA 2</h4>
+                       </div>
+                    </div>
+                    <div class="carruselItem">                 
+                        <img src="images/peacemaker.png" alt="">
+                        <div class="overlayCarrusel">
+                            <h4>PEACEMAKER - TEMPORADA 3</h4>
+                        </div>                
+                    </div>
+                    <div class="carruselItem">                 
+                        <img src="images/peacemaker.png" alt="">
+                        <div class="overlayCarrusel">
+                           <h4>PEACEMAKER - TEMPORADA 4</h4>
+                       </div>
+                    </div>
+                </div>
+                <div class="btn-left"><img src="images/Back.png" alt=""></div>
+                <div class="btn-right"><img src="images/Forward.png" alt=""></div>
+            </div>
+            <div class="videos">
+                <hr>
+                <h4>Mira las entrevistas completas en nuestro canal de Youtube:</h4>
+                <iframe class="reproductor" src="https://www.youtube.com/embed/dJ7bTbHBcFs?si=2RTjFQTfZ9lpxOgZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="redes">
+                    <img src="images/Facebook F.png" alt="">
+                    <img src="images/XLogo.png" alt="">
+                    <img src="images/YouTubeLogo.png" alt="">
+                    <img src="images/tiktokLogo.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div> 
+    <footer>
+        <hr>
+        <div class="footerContainer">
+            <div class="redesFooter">
+                <h4>Seguinos en nuestras redes!</h4>
+                <div class="redesFooterIcons">
+                    <img src="images/Instagram.png" alt="">
+                    <img src="images/Facebook.png" alt="">
+                    <img src="images/X.png" alt="">
+                    <img src="images/YouTube.png" alt="">
+                    <img src="images/tiktok.png" alt="">
+                </div>
+                <div class="contactoFooter">
+                    <p>web@lacosacine.com</p>
+                    <button>Contacto</button>
+                </div>
+            </div>
+            <div class="logoFooter">
+                <img src="images/LogoLaCosaCine.png" alt="Logo de la Cosa Cine">
+            </div>
+            <div class="registroFooter">
+                <h4>Registrate y enterate primero de la informacion mas importante y exclusiva sobre cine, series y videojuegos</h4>
+                <form>
+                    <input type="email" placeholder="Direccion de email">
+                    <button type="submit">Registrate</button>
+                </form>
+                <h5>La cosa cine © 1995 - 2025</h5>
+                <h6>www.lacosacine.com todos los derechos reservados.</h6>
+                
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
