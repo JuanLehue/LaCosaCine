@@ -250,10 +250,11 @@ nav a:hover{
     margin: 0;
     transition: all 0.4s ease;
     transform: translateY(50%);
+    position: relative;
+    justify-self: flex-end;
 }
 
 .overlaySuperman p {
-    
     font-family: "Jost", sans-serif;
     font-size: 1rem;
     margin-top: 10px;
@@ -264,7 +265,7 @@ nav a:hover{
 .cardSuperman:hover .overlaySuperman {
   background-color: rgba(0, 0, 0, 0.7);
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .cardSuperman:hover .overlaySuperman h4 {
@@ -272,15 +273,110 @@ nav a:hover{
     font-size: 3.6rem;
     opacity: 1;
     padding: 0 20px;
-
+    align-self: flex-start;
 }
 
 .cardSuperman:hover .overlaySuperman p {
     opacity: 1;
     font-size: 1.3rem;
     padding: 0 20px;
+    align-self: flex-start;
 }
 
+.infoOverlaySuperman{
+    display: flex;
+    align-items: flex-start;
+    top: 0;
+    position: absolute;
+    margin-top: 40px;
+    justify-content: space-between; 
+    width: 100%;
+    padding: 0 20px;
+    padding-right: 60px;
+}
+
+.infoOverlaySuperman p{
+    opacity: 1;
+    font-size: 1.3rem;
+    margin-top: 0;
+}
+
+.infoOverlaySuperman h5{
+    font-family: "Jost", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    margin: 0;
+    color: #FFFFFF;
+    opacity: 0;
+}
+
+.infoOverlaySuperman button{
+    background-color: transparent;
+    color: #FFFFFF;
+    font-family: "Jost", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    padding: 0px 15px;
+    border: 2px solid #FFFFFF;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    opacity: 0;
+}
+
+.cardSuperman:hover .infoOverlaySuperman h5{
+    opacity: 1;
+}
+
+.cardSuperman:hover .infoOverlaySuperman button {
+    opacity: 1;
+}
+
+
+.infoOverlaySuperman button:hover{
+    background-color: #FFFFFF;
+    color: #000000;
+    transition: all 0.4s ease;
+    position: relative;
+    bottom: 0px;
+}
+
+.botonOverlaySuperman{
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.botonOverlaySuperman button{
+    background-color: transparent;
+    color: #FFFFFF;
+    font-family: "Jost", sans-serif;
+    max-width: 200px;
+    font-size: 18px;
+    font-weight: 300;
+    padding: 5px 10px;
+    border: 2px solid #FFFFFF;
+    border-radius: 25px;
+    cursor: pointer;
+    opacity: 0;
+    transition: ease-in 0.6s ease;
+}
+
+.botonOverlaySuperman button:hover{
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+.cardSuperman:hover .botonOverlaySuperman button{
+    opacity: 1;
+    transition: all 0.6s ease;
+    bottom: 0px;
+}
 
 
 
@@ -290,7 +386,7 @@ nav a:hover{
     align-items: center;
     margin: 0 200px;
     margin-top: 40px;
-    margin-bottom: 60px;
+    margin-bottom: 100px;
 }
 
 .noticiasTitle{
@@ -366,6 +462,105 @@ hr{
     justify-self: center;    
 }
 
+/*COMUNIDAD*/
+.comunidadContainer{
+    position: relative;
+    width: 100%;
+    height: 270px;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    margin-bottom: 80px;
+}
+
+.comunidadContainer img {
+  width: 100%;
+  display: block;
+  transition: 0.4s ease;
+}
+
+.comunidadOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    
+}
+
+.comunidadcard{
+    width: 400px;
+}
+
+.comunidadcardoverlay p {
+    font-family: "Jost", sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+    margin-top: 10px;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+.comunidadContainer:hover .comunidadcardoverlay p {
+    opacity: 1;
+}
+
+.comunidadcardoverlay h2 {
+    font-family: "Anton SC", sans-serif;
+    font-size: 38px;
+    font-weight: 100;
+    position: relative;
+    align-self: center;
+    justify-self: center;
+    width: 1200px;
+    margin: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.comunidadContainer:hover .comunidadcardoverlay h2{
+    transform: translateY(-20%);
+    font-size: 20px;
+    margin: auto;
+    width: 400px;
+    text-align: center
+}
+
+.comunidadcardoverlay{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    align-items: center;
+}
+
+.comunidadcardoverlay button{
+    background-color: transparent;
+    color: #FFFFFF;
+    font-family: "Jost", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    padding: 5px 10px;
+    border: 2px solid #FFFFFF;
+    border-radius: 25px;
+    cursor: pointer;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+.comunidadContainer:hover .comunidadcardoverlay button{
+    opacity: 1;
+}
+
+.comunidadcardoverlay button:hover{
+    background-color: #FFFFFF;
+    color: #000000;
+    transition: all 0.4s ease;
+}
+
 /*SECCION CARRUSEL*/
 .sectionCarrusel{
     display: flex;
@@ -426,7 +621,7 @@ hr{
 
 .overlayCarrusel h4{
     font-family: "Anton SC", sans-serif;
-    font-size: 2.5rem;
+    font-size: 33px;
     font-weight: 100;
     margin: 0;
     align-self: flex-start;
@@ -437,7 +632,7 @@ hr{
 
 
 .carruselItemContainer{
-    width: 300%;
+    width: 400%;
     height: 100%;
     display: flex;
 }
