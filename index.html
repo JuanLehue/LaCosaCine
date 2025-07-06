@@ -1,17 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <header>
-        <p class="fecha"> 23/05/2025</p>
-        <img class="logoHeader" src="images/LogoLaCosaCine.png" alt="Logo de la Cosa Cine">
-        <a href=""> Iniciar sesion</a>
+        <div class="fechaContainer">
+            <p class="fecha"> 23/05/2025</p>
+        </div>
+        <div class="logoContainer">
+            <img class="logoHeader" src="images/LogoLaCosaCine.png" alt="Logo de la Cosa Cine">
+        </div>
+        <div class="loginContainer">
+            <a href=""> Iniciar sesion</a>
+            <a href="">Registrarse</a>
+        </div>
     </header>
     <nav>
         <div>
@@ -52,111 +63,518 @@
     <div class="noticiasContainer">
         <h2 class="noticiasTitle">ÚLTIMAS NOTICIAS</h2>
         <div class="cardSuperman">
-            <img src="images/superman.png" alt="imagen de superman">
+            <img src="images/superman3.png" alt="imagen de superman">
             <div class="overlaySuperman">
                 <div class="infoOverlaySuperman">
                     <p>20/06/2025</p>
-                    <h5>Por <strong>Maca Reynolds</strong></h5>
-                    <button>Superman</button>
+                    <div class="botonesOverlaySuperman">
+                        <button>DC</button>
+                        <button>Superman</button>
+                    </div>
                 </div>
                 <h4>SUPERMAN RECIBE REACCIONES TEMPRANAS</h4>
-                <p class="subtittuloOverlaySuperman">Los primeros 30 minutos de Superman fueron exhibidos, y las reacciones revelan si el DCU despega con el pie derecho o el izquierdo.</p>
-                <div class="botonOverlaySuperman">
-                    <button>Leer artículo completo</button>
+                <p class="subtittuloOverlaySuperman">Los primeros 30 minutos de Superman fueron exhibidos, y las
+                    reacciones revelan si el DCU despega con el pie derecho o el izquierdo.</p>
+                    <div class="botonOverlaySuperman">
+                        <h5>Por <strong>Maca Reynolds</strong></h5>
+                        <button>Leer artículo</button>
                 </div>
             </div>
         </div>
-        <div class="cardsContainer">
+     <div class="cardsContainer">
             <div class="cardJurassic">
                 <img src="images/jurasic.png" alt="imagen de jurassic">
                 <div class="overlayMini">
+                    <div class="infoOverlayMini">
+                        <p>20/06/2025</p>
+                        <div class="likesOverlayMini"><img src="images/thumb.png" alt=""> 45</div>
+                    </div>                    
                     <h5>JURASSIC WORLD: REBIRTH ENFRENTA PRIMERAS REACCIONES</h5>
+                    <div class="botonOverlayMini">
+                        <p>Por <strong>Maca Reynolds</strong></p>
+                        <button>Películas</button>
+                    </div>
                 </div>
             </div>
             <div class="cardJurassic">
                 <img src="images/mindhunter.png" alt="imagen de mindhunter">
                 <div class="overlayMini">
+                    <div class="infoOverlayMini">
+                        <p>18/06/2025</p>
+                        <div class="likesOverlayMini"><img src="images/thumb.png" alt=""> 90</div>
+                    </div>
                     <h5>¿MINDHUNTER PODRÍA VOLVER CON UNA PELÍCULA?</h5>
+                    <div class="botonOverlayMini">
+                        <p>Por <strong>Maca Reynolds</strong></p>
+                        <button>Series</button>
+                    </div>
                 </div>
             </div>
             <div class="cardJurassic">
                 <img src="images/witcher.png" alt="imagen de witcher">
                 <div class="overlayMini">
+                    <div class="infoOverlayMini">
+                        <p>19/06/2025</p>
+                        <div class="likesOverlayMini"><img src="images/thumb.png" alt=""> 57</div>
+                    </div>
                     <h5>ASÍ SE TRATARÁ EL IMPORTANTE CAMBIO EN THE WITCHER</h5>
+                    <div class="botonOverlayMini">
+                        <p>Por <strong>Maca Reynolds</strong></p>
+                        <button>Videojuegos</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div> 
+    </div>
+
+
+
+
+
+    <!-- FAVORITOS -->
+    <div class="favoritosContainer">
+        <div class="favoritosTitle">
+            <h2>Favoritos del mes</h2>
+            <p>Los articulos favoritos de nuestros usuarios</p>
+            <button>Favoritos anteriores</button>
+        </div>
+    </div>
+    <div class="carouselContainer2">
+        <div class="carousel2">
+            <div class="slide2">
+                <img src="images/fnfa.png" />
+                <div class="overlay2">
+                    <div class="likes2"><img src="images/thumb.png" alt="">53</div>
+                    <h3>Five nights at Freddy's anticipa su secuela</h3>
+                </div>
+            </div>
+            <div class="slide2">
+                <img src="images/tiburon.png" />
+                <div class="overlay2">
+                    <div class="likes2"><img src="images/thumb.png" alt="">71</div>
+                    <h3>Tiburón: un clásico que sigue nadando 50 años después</h3>
+                </div>
+            </div>
+            <div class="slide2">
+                <img src="images/stranger.png" />
+                <div class="overlay2">
+                    <div class="likes2"><img src="images/thumb.png" alt="">64</div>
+                    <h3>Stranger things: primeros detalles de la serie animada</h3>
+                </div>
+            </div>
+            <div class="slide2">
+                <img src="images/superman2.png" />
+                <div class="overlay2">
+                    <div class="likes2"><img src="images/thumb.png" alt="">48</div>
+                    <h3>James Gunn responde a la campaña anti-superman</h3>
+                </div>
+            </div>
+            <div class="slide2">
+                <img src="images/ironheart.png" />
+                <div class="overlay2">
+                    <div class="likes2"><img src="images/thumb.png" alt="">33</div>
+                    <h3>Ironheart revela nuevo trailer</h3>
+                </div>
+            </div>
+            <div class="slide2">
+                <img src="images/hp.jpg" />
+                <div class="overlay2">
+                    <div class="likes2"><img src="images/thumb.png" alt="">45</div>
+                    <h3>Harry Potter: todo lo que sabemos de la serie</h3>
+                </div>
+            </div>
+
+            <button class="nav2 prev2" onclick="move(-1)"><img src="images/left.png" alt=""></button>
+            <button class="nav2 next2" onclick="move(1)"><img src="images/rigth.png" alt=""></button>
+        </div>
+    </div>
+
+    <section class="filtros">
+        <div class="contenedor-titulo-filtro">
+            <div class="filtros-header">
+                <p>Elegí qué querés leer</p>
+                <button id="toggleFiltros">▼</button> <!-- Podés reemplazar por una imagen o SVG -->
+            </div>
+        </div>
+
+        <div class="contenedor-filtros">
+            <div id="contenedorFiltros" class="contenedor-filtros">
+                <!-- FORMATO -->
+                <div class="grupo-filtros">
+                    <label class="categoria">
+                        <input type="checkbox" class="principal" checked> Formato
+                    </label>
+                    <label><input type="checkbox" value="series" class="hijo" checked> Series</label>
+                    <label><input type="checkbox" value="peliculas" class="hijo" checked> Películas</label>
+                    <label><input type="checkbox" value="spin-off" class="hijo" checked> Spin-off</label>
+                    <label><input type="checkbox" value="live-action" class="hijo" checked> Live-action</label>
+                    <label><input type="checkbox" value="animacion" class="hijo" checked> Animación</label>
+                </div>
+
+                <!-- GÉNERO -->
+                <div class="grupo-filtros">
+                    <label class="categoria">
+                        <input type="checkbox" class="principal" checked> Género
+                    </label>
+                    <label><input type="checkbox" value="accion" class="hijo" checked> Acción</label>
+                    <label><input type="checkbox" value="fantasia" class="hijo" checked> Fantasía</label>
+                    <label><input type="checkbox" value="drama" class="hijo" checked> Drama</label>
+                    <label><input type="checkbox" value="terror" class="hijo" checked> Terror</label>
+                    <label><input type="checkbox" value="romance" class="hijo" checked> Romance</label>
+                    <label><input type="checkbox" value="thriller" class="hijo" checked> Thriller</label>
+                    <label><input type="checkbox" value="ciencia-ficcion" class="hijo" checked> Ciencia Ficción</label>
+                </div>
+
+                <!-- FRANQUICIAS -->
+                <div class="grupo-filtros">
+                    <label class="categoria">
+                        <input type="checkbox" class="principal" checked> Franquicias
+                    </label>
+                    <label><input type="checkbox" value="dc" class="hijo" checked> DC</label>
+                    <label><input type="checkbox" value="marvel" class="hijo" checked> Marvel</label>
+                    <label><input type="checkbox" value="star-wars" class="hijo" checked> Star Wars</label>
+                    <label><input type="checkbox" value="harry-potter" class="hijo" checked> Harry Potter</label>
+                    <label><input type="checkbox" value="star-trek" class="hijo" checked> Star Trek</label>
+                </div>
+
+                <!-- BASADO EN -->
+                <div class="grupo-filtros">
+                    <label class="categoria">
+                        <input type="checkbox" class="principal" checked> Basado en...
+                    </label>
+                    <label><input type="checkbox" value="comics" class="hijo" checked> Comics</label>
+                    <label><input type="checkbox" value="videojuegos" class="hijo" checked> Videojuegos</label>
+                    <label><input type="checkbox" value="libros" class="hijo" checked> Libros</label>
+                    <label><input type="checkbox" value="manga" class="hijo" checked> Manga</label>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="filtrosContainer">
+
+        <div class="cardFiltro" data-filtros="peliculas"> <!--verano pasado-->
+            <div class="fotoCardFiltro">
+                <img src="images/veranopasado.png" alt="">
+                <div class="overlayFotoFiltro">
+                    <div class="likesoverlayFiltro">
+                        <img src="images/thumb.png" alt="">
+                        <p>100</p>
+                    </div>
+                    <button>Leer</button>
+                </div>
+            </div>
+            <div class="categoria">
+                <h4>PELICULAS</h4>
+                <p>17/06/2025</p>
+            </div>
+            <hr>
+            <div class="descripcionCardFiltro">
+                <h3>Se lo que hicieron el verano pasado revela nuevo trailer</h3>
+                <h4>La franquicia regresa con una nueva pelicula, y sale a la luz un nuevo adelanto de esta nueva
+                    historia de horror.</h4>
+                <p>Escrito por <strong>Maca Reynolds</strong></p>
+            </div>
+        </div>
+
+        <div class="cardFiltro" data-filtros="peliculas"> <!--allen white-->
+            <div class="fotoCardFiltro">
+                <img src="images/jeremy.png" alt="">
+                <div class="overlayFotoFiltro">
+                    <div class="likesoverlayFiltro">
+                        <img src="images/thumb.png" alt="">
+                        <p>45</p>
+                    </div>
+                    <button>Leer</button>
+                </div>
+            </div>
+            <div class="categoria">
+                <h4>PELICULAS</h4>
+                <p>18/06/2025</p>
+            </div>
+            <hr>
+            <div class="descripcionCardFiltro">
+                <h3>Jeremy Allen White se convierte en Bruce Springsteen</h3>
+                <h4>Jeremy Allen White deja un rato de lado la cocina de The Bear y se transforma en Bruce Springsteen
+                    para Deliver Me from Nowhere, la biopic del cantante.</h4>
+                <p>Escrito por <strong>Maca Reynolds</strong></p>
+            </div>
+        </div>
+
+        <div class="cardFiltro" data-filtros="series"> <!--SERIE LGBT-->
+            <div class="fotoCardFiltro">
+                <img src="images/lgt.png" alt="">
+                <div class="overlayFotoFiltro">
+                    <div class="likesoverlayFiltro">
+                        <img src="images/thumb.png" alt="">
+                        <p>67</p>
+                    </div>
+                    <button>Leer</button>
+                </div>
+            </div>
+            <div class="categoria">
+                <h4>SERIES</h4>
+                <p>08/06/2025</p>
+            </div>
+            <hr>
+            <div class="descripcionCardFiltro" >
+                <h3>5 SERIES LGBTQ+ QUE NO TE PODÉS PERDER</h3>
+                <h4>Continuamos con nuestra celebración del mes del orgullo LGBTQ+, y te traemos algunas series que
+                    tenés que ver.</h4>
+                <p>Escrito por <strong>Maca Reynolds</strong></p>
+            </div>
+        </div>
+
+        <div class="cardFiltro" data-filtros="comics"> <!--green arrow-->
+            <div class="fotoCardFiltro">
+                <img src="images/arrow.png" alt="">
+                <div class="overlayFotoFiltro">
+                    <div class="likesoverlayFiltro">
+                        <img src="images/thumb.png" alt="">
+                        <p>30</p>
+                    </div>
+                    <button>Leer</button>
+                </div>
+            </div>
+            <div class="categoria">
+                <h4>COMICS</h4>
+                <p>25/04/2025</p>
+            </div>
+            <hr>
+            <div class="descripcionCardFiltro">
+                <h3>¿El DCU entró a su green arrow?</h3>
+                <h4>Luego de una publicación del actor de Lanterns, Garret Dillahunt, los fans creen que será el Green
+                    Arrow del DCU, y James Gunn responde.</h4>
+                <p>Escrito por <strong>Maca Reynolds</strong></p>
+            </div>
+        </div>
+
+        <div class="cardFiltro" data-filtros="videojuegos"> <!--uncharted-->
+            <div class="fotoCardFiltro">
+                <img src="images/uncharted.png" alt="">
+                <div class="overlayFotoFiltro">
+                    <div class="likesoverlayFiltro">
+                        <img src="images/thumb.png" alt="">
+                        <p>88</p>
+                    </div>
+                    <button>Leer</button>
+                </div>
+            </div>
+            <div class="categoria">
+                <h4>VIDEOJUEGOS</h4>
+                <p>12/02/2025</p>
+            </div>
+            <hr>
+            <div class="descripcionCardFiltro">
+                <h3>¿UNCHARTED TENDRÁ SECUELA O NO?</h3>
+                <h4>Charles Roven, productor de Uncharted de 2022, finalmente brinda una actualización
+                     sobre el estado de la potencial segunda parte</h4>
+                <p>Escrito por <strong>Maca Reynolds</strong></p>
+            </div>
+        </div>
+        <div class="cardFiltro" data-filtros="videojuegos"> <!--arcane-->
+            <div class="fotoCardFiltro">
+                <img src="images/arcane.png" alt="">
+                <div class="overlayFotoFiltro">
+                    <div class="likesoverlayFiltro">
+                        <img src="images/thumb.png" alt="">
+                        <p>46</p>
+                    </div>
+                    <button>Leer</button>
+                </div>
+            </div>
+            <div class="categoria">
+                <h4>VIDEOJUEGOS</h4>
+                <p>22/11/2024</p>
+            </div>
+            <hr>
+            <div class="descripcionCardFiltro">
+                <h3>Netflix denunciada por uso de ia en Arcane</h3>
+                <h4>Un usuario de Twitter/X expone a Netflix por usar Inteligencia Artificial en un poster de Arcane sin notificar a Riot Games.</h4>
+                <p>Escrito por <strong>Maca Reynolds</strong></p>
+            </div>
+        </div>
+
+        <div class="cardFiltro" data-filtros="peliculas"> <!--100 mejores peliculas-->
+            <div class="fotoCardFiltro">
+                <img src="images/parasyte.png" alt="">
+                <div class="overlayFotoFiltro">
+                    <div class="likesoverlayFiltro">
+                        <img src="images/thumb.png" alt="">
+                        <p>99</p>
+                    </div>
+                    <button>Leer</button>
+                </div>
+            </div>
+            <div class="categoria">
+                <h4>PELICULAS</h4>
+                <p>19/01/2025</p>
+            </div>
+            <hr>
+            <div class="descripcionCardFiltro"> 
+                <h3>LAS 100 MEJORES PELÍCULAS DEL SIGLO 21</h3>
+                <h4>El New York Times elige las 100 mejores películas en lo que va del Siglo 21,
+                     con una votación abierta a toda la audiencia.</h4>
+                <p>Escrito por <strong>Maca Reynolds</strong></p>
+            </div>
+        </div>
+        <div class="cardFiltro" data-filtros="videojuegos"> <!--watch dogs-->
+            <div class="fotoCardFiltro">
+                <img src="images/watchdog.png" alt="">
+                <div class="overlayFotoFiltro">
+                    <div class="likesoverlayFiltro">
+                        <img src="images/thumb.png" alt="">
+                        <p>76</p>
+                    </div>
+                    <button>Leer</button>
+                </div>
+            </div>
+            <div class="categoria">
+                <h4>VIDEOJUEGOS</h4>
+                <p>08/03/2024</p>
+            </div>
+            <hr>
+            <div class="descripcionCardFiltro">
+                <h3>Watch Dogs anuncia su adaptación cinematográfica</h3>
+                <h4>Watch Dogs es el más reciente videojuego en sumarse a la larga lista que están llegando al cine y al streaming en los últimos años.</h4>
+                <p>Escrito por <strong>Maca Reynolds</strong></p>
+            </div>
+        </div>
+
+        <div class="cardFiltro" data-filtros="series"> <!--calamar-->
+            <div class="fotoCardFiltro">
+                <img src="images/calamar.png" alt="">
+                <div class="overlayFotoFiltro">
+                    <div class="likesoverlayFiltro">
+                        <img src="images/thumb.png" alt="">
+                        <p>110</p>
+                    </div>
+                    <button>Leer</button>
+                </div>
+            </div>
+            <div class="categoria">
+                <h4>SERIES</h4>
+                <p>26/06/2024</p>
+            </div>
+            <hr>
+            <div class="descripcionCardFiltro"> 
+                <h3>¿CÓMO SERÍA UN SPIN-OFF DE EL JUEGO DE CALAMAR?</h3>
+                <h4>El Juego del Calamar llega a su fin este 27 de junio,
+                     pero ya hay planes para expandir su universo,
+                      aunque tal vez no de la forma en que los fans creen.</h4>
+                <p>Escrito por <strong>Maca Reynolds</strong></p>
+            </div>
+        </div>
+    </div>
+
     <div class="comunidadContainer">
         <img src="images/comunidad.png" alt="">
         <div class="comunidadOverlay">
-            <div class="comunidadcard" >
+            <div class="comunidadcard">
                 <div class="comunidadcardoverlay">
                     <p>Unite a la comunidad de La Cosa Cine y tirá tu opinión en cada artículo.<br>¡Queremos leerte!</p>
                 </div>
             </div>
-            
-            <div class="comunidadcard" >
+
+            <div class="comunidadcard">
                 <div class="comunidadcardoverlay">
                     <h2>¿Te copa la idea de debatir y conectar con miembros de la comunidad?</h2>
                     <button>¡Quiero sumarme!</button>
                 </div>
             </div>
-            
-            <div class="comunidadcard" >
+
+            <div class="comunidadcard">
                 <div class="comunidadcardoverlay">
-                    <p>Sumate a la comunidad de La Cosa Cine y compartí lo que pensás con personas que aman lo mismo que vos</p>
+                    <p>Sumate a la comunidad de La Cosa Cine y compartí lo que pensás con personas que aman lo mismo que
+                        vos</p>
                 </div>
             </div>
         </div>
     </div>
-    <hr>
     <div class="carruselContainer">
         <h2 class="carruselTitle">PRÓXIMOS ESTRENOS</h2>
         <div class="sectionCarrusel">
             <div class="carrusel">
                 <div class="carruselItemContainer">
-                    <div class="carruselItem">                 
+                    <div class="carruselItem">
                         <img src="images/peacemaker.png" alt="">
                         <div class="overlayCarrusel">
-                           <h4>PEACEMAKER - TEMPORADA 2</h4>
-                       </div>
+                            <h4>PEACEMAKER - TEMPORADA 2</h4>
+                        </div>
                     </div>
-                    <div class="carruselItem">                 
+                    <div class="carruselItem">
                         <img src="images/wtcher.jpeg" alt="">
                         <div class="overlayCarrusel">
                             <h4>THE WITCHER - TEMPORADA 4</h4>
-                        </div>                
+                        </div>
                     </div>
-                    <div class="carruselItem">                 
+                    <div class="carruselItem">
                         <img src="images/f1.jpg" alt="">
                         <div class="overlayCarrusel">
-                           <h4>F1: LA PELICULA SOBRE FORMULA 1 CON BRAD PITT</h4>
-                       </div>
+                            <h4>F1: LA PELICULA SOBRE FORMULA 1 CON BRAD PITT</h4>
+                        </div>
                     </div>
-                    <div class="carruselItem">                 
+                    <div class="carruselItem">
                         <img src="images/megan.jpg" alt="">
                         <div class="overlayCarrusel">
-                           <h4>MEGAN 2.0 ATERRIZA EN CINES EL 27 DE JUNIO</h4>
-                       </div>
+                            <h4>MEGAN 2.0 ATERRIZA EN CINES EL 27 DE JUNIO</h4>
+                        </div>
                     </div>
                 </div>
-                <div class="btn-left"><img src="images/Back.png" alt=""></div>
-                <div class="btn-right"><img src="images/Forward.png" alt=""></div>
-            </div>
-            <div class="videos">
-                <hr>
-                <h4>Mira las entrevistas completas en nuestro canal de Youtube:</h4>
-                <iframe class="reproductor" src="https://www.youtube.com/embed/dJ7bTbHBcFs?si=2RTjFQTfZ9lpxOgZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <div class="redes">
-                    <img src="images/Facebook F.png" alt="">
-                    <img src="images/XLogo.png" alt="">
-                    <img src="images/YouTubeLogo.png" alt="">
-                    <img src="images/tiktokLogo.png" alt="">
-                </div>
+                <div class="btn-left"><img src="images/left.png" alt=""></div>
+                <div class="btn-right"><img src="images/rigth.png" alt=""></div>
             </div>
         </div>
-    </div> 
+    </div>
+
+    <div class="entrevistasWrapper">
+        <div class="entrevistasLeft">
+            <h2 class="tituloEntrevistas">ENTREVISTAS</h2>
+            <iframe class="reproductor" src="https://www.youtube.com/embed/dJ7bTbHBcFs?si=2RTjFQTfZ9lpxOgZ"
+                ...></iframe>
+            <div class="redes">
+                <img src="images/Facebook F.png" alt="Facebook">
+                <img src="images/XLogo.png" alt="X">
+                <img src="images/YouTubeLogo.png" alt="YouTube">
+                <img src="images/tiktokLogo.png" alt="TikTok">
+            </div>
+        </div>
+
+        <div class="entrevistasRight">
+            <h3 class="subtitulo2">OTRAS ENTREVISTAS:</h3>
+
+            <div class="entrevistaItem">
+                <p class="categoria2"> <mark> Películas, Entrevistas</mark> · 10/06/2024</p>
+                <h4 class="titulo2">DESTINO FINAL: LÍNEA DE SANGRE - ENTREVISTA 2</h4>
+                <p class="descripcion2">Destino Final: Lazos de Sangre ya llegó a los cines, y Lu Agosta habló con sus
+                    protagonistas sobre el legado de la franquicia.</p>
+            </div>
+
+            <div class="entrevistaItem">
+                <p class="categoria2"><mark> Películas, Entrevistas</mark> · 05/05/2024</p>
+                <h4 class="titulo2">CORAZÓN DELATOR: HABLAMOS CON BENJAMÍN VICUÑA Y JULIETA DÍAZ</h4>
+                <p class="descripcion2">Corazón Delator llega este 30 de mayo a Netflix, y Lu Agosta habló con Benjamín
+                    Vicuña y Julieta Díaz</p>
+            </div>
+
+            <div class="entrevistaItem">
+                <p class="categoria2"><mark> Películas, Entrevistas</mark>· 11/04/2024</p>
+                <h4 class="titulo2">G20: ENTREVISTA CON SUS PROTAGONISTAS</h4>
+                <p class="descripcion2">G20 ya está disponible en Prime Video y Maca Reynolds habló con Anthony Anderson,
+                    Marsai Martin y Christopher Farrar.</p>
+            </div>
+
+            <div class="entrevistaItem">
+                <p class="categoria2"><mark> Películas, Entrevistas</mark>· 10/06/2024</p>
+                <h4 class="titulo2">ÉRAMOS MENTIROSOS: HABLAMOS CON JOSEPH ZADA Y ESTHER ROSE MCGREGOR</h4>
+                <p class="descripcion2">Éramos Mentirosos ya llegó a la pantalla de Prime Video, y hablamos con Joseph
+                    Zada y Esther Rose McGregor</p>
+            </div>
+
+        </div>
+    </div>
+
     <footer>
         <hr>
         <div class="footerContainer">
@@ -178,17 +596,19 @@
                 <img src="images/LogoLaCosaCine.png" alt="Logo de la Cosa Cine">
             </div>
             <div class="registroFooter">
-                <h4>Registrate y enterate primero de la informacion mas importante y exclusiva sobre cine, series y videojuegos</h4>
+                <h4>Registrate y enterate primero de la informacion mas importante y exclusiva sobre cine, series y
+                    videojuegos</h4>
                 <form>
                     <input type="email" placeholder="Direccion de email">
                     <button type="submit">Registrate</button>
                 </form>
                 <h5>La cosa cine © 1995 - 2025</h5>
                 <h6>www.lacosacine.com todos los derechos reservados.</h6>
-                
+
             </div>
-        </footer>
+    </footer>
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>
