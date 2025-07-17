@@ -68,73 +68,65 @@ function move(direction) {
 
 updateCarousel();
 
-document.getElementById("toggleFiltros").addEventListener("click", () => {
-  document.getElementById("contenedorFiltros").classList.toggle("oculto");
-});
-
-document.querySelectorAll('.grupo-filtros').forEach(grupo => {
-  const principal = grupo.querySelector('.principal');
-  const hijos = grupo.querySelectorAll('.hijo');
-
-  
-  principal.addEventListener('change', () => {
-    hijos.forEach(hijo => {
-      hijo.checked = principal.checked;
-    });
-  });
-
-  
-  hijos.forEach(hijo => {
-    hijo.addEventListener('change', () => {
-      const todosMarcados = Array.from(hijos).every(h => h.checked);
-      principal.checked = todosMarcados;
-    });
-  });
-});
 
 document.addEventListener('DOMContentLoaded', () => {
-  const checkboxes = document.querySelectorAll('input[type="checkbox"].hijo');
+  const botonesFiltro = document.querySelectorAll('.dropdown-item');
   const tarjetas = document.querySelectorAll('.cardFiltro');
 
-  function aplicarFiltros() {
-    const filtrosSeleccionados = Array.from(checkboxes)
-      .filter(cb => cb.checked)
-      .map(cb => cb.value.toLowerCase());
+  botonesFiltro.forEach(boton => {
+    boton.addEventListener('click', () => {
+      const filtro = boton.dataset.filtro.toLowerCase();
 
-    tarjetas.forEach(tarjeta => {
-      const filtrosTarjeta = tarjeta.dataset.filtros
-        .toLowerCase()
-        .split(',')
-        .map(f => f.trim());
+      tarjetas.forEach(tarjeta => {
+        const filtrosTarjeta = tarjeta.dataset.filtros.toLowerCase().split(',').map(f => f.trim());
 
-      const coincide = filtrosSeleccionados.some(filtro => filtrosTarjeta.includes(filtro));
+        if (filtrosTarjeta.includes(filtro)) {
+          tarjeta.style.display = 'block';
+        } else {
+          tarjeta.style.display = 'none';
+        }
 
-      tarjeta.style.display = coincide ? 'block' : 'none';
-    });
-  }
+        if (filtro === 'todos') {
+  tarjeta.style.display = 'block';
+} else {
+  tarjeta.style.display = filtrosTarjeta.includes(filtro) ? 'block' : 'none';
+}
 
-  checkboxes.forEach(cb => {
-    cb.addEventListener('change', aplicarFiltros);
-  });
-
-  
-  document.querySelectorAll('.grupo-filtros').forEach(grupo => {
-    const principal = grupo.querySelector('.principal');
-    const hijos = grupo.querySelectorAll('.hijo');
-
-    principal.addEventListener('change', () => {
-      hijos.forEach(hijo => hijo.checked = principal.checked);
-      aplicarFiltros(); 
-    });
-
-    hijos.forEach(hijo => {
-      hijo.addEventListener('change', () => {
-        const todosMarcados = Array.from(hijos).every(h => h.checked);
-        principal.checked = todosMarcados;
-        aplicarFiltros(); 
       });
     });
   });
+});
 
-  aplicarFiltros();
+
+//INICIO SESION
+const btnAbrirModal = document.querySelector("#btn-abrir-modal2");
+const btnCerrarModal = document.querySelector("#btn-cerrar-modal2");
+const btnEnviar = document.querySelector("#btnEnviar2");
+const modal = document.querySelector("#modal2");
+const respuesta = document.querySelector("#respuesta2");
+const form = document.querySelector("#formulario2");
+
+
+btnAbrirModal.addEventListener("click", ()=>{
+  modal.showModal();
+})
+
+btnCerrarModal.addEventListener("click", ()=>{
+  modal.close();
+})
+
+
+form.addEventListener("submit", function(e) {
+  e.preventDefault(); // Previene el envío normal
+
+  const nombre = document.getElementById("nombre").value;
+  const email = document.getElementById("password").value;
+
+  // Validación simple
+  if (nombre && password) {
+    // Redirige a otra página
+    window.location.href = "iniciado.html";
+  } else {
+    alert("Por favor completá correctamente los campos.");
+  }
 });

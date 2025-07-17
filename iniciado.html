@@ -24,13 +24,21 @@
             <img class="logoHeader" src="images/LogoLaCosaCine.png" alt="Logo de la Cosa Cine">
         </div>
         <div class="loginContainer">
-            <button id="btn-abrir-modal2"> Iniciar sesion</button>
-            <button href="">Registrarse</button>
+            <button class="iniciadoNoti"><img src="images/notification.png" alt=""></button>
+            <button class="iniciadoPerfil" data-bs-toggle="dropdown"
+                aria-expanded="false">Mi perfil<img src="images/perfil.png" alt=""></button>
+            <ul class="dropdown-menu dropdown-menu-end">
+                <li><button class="dropdown-item" type="button" data-filtro="Peliculas">Mis comentarios</button></li>
+                <li><button class="dropdown-item" type="button" data-filtro="Series">Valoraciones</button></li>
+                <li><button class="dropdown-item" type="button" data-filtro="Comics">Historial</button></li>
+                <li><button class="dropdown-item" type="button" data-filtro="Videojuegos">Editar perfil</button></li>
+                <li><button class="dropdown-item" type="button" data-filtro="todos" onclick="location.href='index.html'">Cerrar sesión</button></li>
+            </ul>
         </div>
     </header>
     <nav>
         <div>
-            <a href="">HOME</a>
+            <a href="index.html">HOME</a>
             <a href="">NOTICIAS</a>
             <a href="">ENTREVISTAS</a>
 
@@ -64,38 +72,6 @@
 
         </div>
     </nav>
-
-    <dialog class="modal2" id="modal2">
-        <div class="modalCont2">
-            <button id="btn-cerrar-modal2" class="modalBtnCerrar2"><img src="images/close.png" alt=""></button>
-            <img class="modalLogo2" src="images/Logo La Cosa Cine.png" alt="logoCine">
-            <h2 class="modalTitle2">INICIAR SESIÓN</h2>
-            <p class="modalSubtitle2">¿Todavía no tenés cuenta? <a href=""><strong>Registrate</strong></a></p>
-            <form action="" class="modalForm2" id="formulario2">
-                <div class="inputCont">
-                    <img src="images/mail.png" alt="">
-                    <input type="text" name="nombre" id="nombre" class="modalInput2" placeholder="Correo electronico..."required>
-                </div>
-                <div class="inputCont">
-                    <img src="images/lock.png" alt="">
-                    <input type="password" name="password" id="password" class="modalInput2" placeholder="Contraseña..."required>
-                    <img src="images/visibility.png" alt="" class="visibility">
-                </div>
-                <p class="modalSubtitle3">¿Olvidaste tu contraseña?</p>
-                <button type="submit" id="btnEnviar2" class="modalBtn2" href="iniciado.html">Iniciar sesión</button>
-            </form>
-            <div class="bloque-linea">
-                <div class="iniciar">Iniciar con</div>
-                <div class="linea"></div>
-            </div>
-            <div class="redes3">
-                <div class="redesContenedor3">
-                    <img src="images/Google.png" alt="google" class="google3">
-                    <img src="images/Facebook2.png" alt="facebook" class="facebook3">
-                </div>
-            </div>
-        </div>
-    </dialog>
 
     <div class="noticiasContainer">
         <h2 class="noticiasTitle">ÚLTIMAS NOTICIAS</h2>
@@ -171,50 +147,47 @@
     <!-- FAVORITOS -->
     <div class="favoritosContainer">
         <div class="favoritosTitle">
-            <h2>Favoritos del mes</h2>
-            <p>Los articulos favoritos de nuestros usuarios</p>
-            <button>Favoritos anteriores</button>
+            <h2>Porque te gusta DC...</h2>
+            <p>Estos son los articulos que te recomendamos:</p>
         </div>
     </div>
     <div class="carouselContainer2">
         <div class="carousel2">
             <div class="slide2">
-                <img src="images/tiburon.png" />
+                <img src="images/constantine.png" />
                 <div class="overlay2">
                     <div class="likes2Cont">
                         <div class="likes2Cat">
-                            <h4>Favoritos en: </h4>
-                            <button>Peliculas</button>
+                            <button>DC</button>
                         </div>
-                        <div class="likes2"><img src="images/thumb.png" alt="">53</div>
+                        
+                        <div class="likes2"><img src="images/thumb.png" alt=""><img src="images/Llorando.png" alt="">66</div>
                     </div>
-                    <h3>Tiburón: un clásico que sigue nadando 50 años después</h3>
+                    <h3>La crisis detrás de constantine 2</h3>
                 </div>
             </div>
             <div class="slide2">
-                <img src="images/stranger.png" />
+                <img src="images/jamesgun.png" />
                 <div class="overlay2">
                     <div class="likes2Cont">
                         <div class="likes2Cat">
-                            <h4>Favoritos en: </h4>
-                            <button>Series</button>
+                            <button>Marvel</button>
                         </div>
-                        <div class="likes2"><img src="images/thumb.png" alt="">53</div>
+                        <div class="likes2"><img src="images/thumb.png" alt=""><img src="images/Sorprendido.png" alt="">53</div>
                     </div>
-                    <h3>Stranger things: primeros detalles de la serie animada</h3>
+                    <h3>James Gunn sobre los problemas de marvel studios</h3>
                 </div>
             </div>
             <div class="slide2">
-                <img src="images/fnfa.png" />
+                <img src="images/linterna.png" />
                 <div class="overlay2">
                     <div class="likes2Cont">
                         <div class="likes2Cat">
-                            <h4>Favoritos en: </h4>
-                            <button>Videojuegos</button>
+                            <button>DC</button>
                         </div>
-                        <div class="likes2"><img src="images/thumb.png" alt="">53</div>
+                        <div class="likes2"><img src="images/thumb.png" alt=""><img src="images/corazon.png" alt="">51</div>
                     </div>
-                    <h3>Five nights at Freddy's anticipa su secuela</h3>
+                    <h3>¿Linterna verde de 2011 pudo ser diferente?</h3>
                 </div>
             </div>
             <div class="slide2">
@@ -222,38 +195,35 @@
                 <div class="overlay2">
                     <div class="likes2Cont">
                         <div class="likes2Cat">
-                            <h4>Favoritos en: </h4>
-                            <button>DC</button>
+                            <button>Superman</button>
                         </div>
-                        <div class="likes2"><img src="images/thumb.png" alt="">53</div>
+                        <div class="likes2"><img src="images/thumb.png" alt=""><img src="images/Poker.png" alt="">48</div>
                     </div>
                     <h3>James Gunn responde a la campaña anti-superman</h3>
                 </div>
             </div>
             <div class="slide2">
-                <img src="images/hp.jpg" />
+                <img src="images/peacemaker.png" />
                 <div class="overlay2">
                     <div class="likes2Cont">
                         <div class="likes2Cat">
-                            <h4>Favoritos en: </h4>
-                            <button>Harry Potter</button>
+                            <button>Marvel</button>
                         </div>
-                        <div class="likes2"><img src="images/thumb.png" alt="">53</div>
+                        <div class="likes2"><img src="images/thumb.png" alt=""><img src="images/Fuego.png" alt="">33</div>
                     </div>
-                    <h3>Harry Potter: todo lo que sabemos sobre la serie</h3>
+                    <h3>Peacemaker revela el tráiler de su segunda temporada</h3>
                 </div>
             </div>
             <div class="slide2">
-                <img src="images/ironheart.png" />
+                <img src="images/arrow2.png" />
                 <div class="overlay2">
                     <div class="likes2Cont">
                         <div class="likes2Cat">
-                            <h4>Favoritos en: </h4>
-                            <button>Marvel</button>
+                            <button>DC</button>
                         </div>
-                        <div class="likes2"><img src="images/thumb.png" alt="">53</div>
+                        <div class="likes2"><img src="images/thumb.png" alt=""><img src="images/Sorprendido.png" alt="">26</div>
                     </div>
-                    <h3>Ironheart revela nuevo trailer</h3>
+                    <h3>¿El DCU encontró a su Green Arrow?</h3>
                 </div>
             </div>
 
@@ -262,7 +232,6 @@
         </div>
     </div>
 
-    
     <div>
         <hr class="separadorFiltro">
     </div>
